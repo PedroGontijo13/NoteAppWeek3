@@ -1,0 +1,54 @@
+.sidebar{
+    width: 20%;
+    height: 100vh;
+
+    &--header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 18px;
+
+        &--title{
+            font-size: 1.75rem;
+        }
+
+        &--btn{
+            cursor: pointer;
+            background-color: #4A4E74;
+            border: none;
+            border-radius: 4px;
+            height: 30px;
+            width: 30px;
+            color: #FFF;
+            margin: 0 6px;
+        }
+    }
+
+    .note{
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 6px;
+        margin-bottom: 4px;
+        &--text{
+            padding-inline: 6px;
+            font-size: 0.8rem;
+            font-weight: 400;
+            line-height: 1.2rem;
+            color: #4A4E74;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+        }
+    }
+}
+
+.selected-note{
+    background-color: #4A4E74;
+    .note--text{
+        color: #FFF;
+    }
+}
