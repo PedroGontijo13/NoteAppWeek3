@@ -16,14 +16,14 @@ function App() {
   /* 4. Delete note by id ✅
   */
 
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState( JSON.parse(localStorage.getItem('notes')) || []);
 
   useEffect(() => {
-    localStorage.setItem("myData", JSON.stringify(notes));
+    localStorage.setItem("notes", JSON.stringify(notes));
   }, [notes]);
 
   function LogData() {
-    const storedNotes = localStorage.getItem("myData");
+    const storedNotes = localStorage.getItem("notes");
     if (storedNotes) {
       console.log(storedNotes);
       setNotes(JSON.parse(storedNotes));
@@ -38,9 +38,9 @@ function App() {
     const newNote = {
       id: nanoid(),
       body: "#Title Here",
-      summary: "",
+      summary: "#Title Here",
     };
-    const firstLine = newNote.body.split("\n")[0].replace(/^#+\s*/, "");
+    const firstLine = newNote.summary.split("\n")[0].replace(/^#+\s*/, "");
     newNote.summary = firstLine !== "" ? firstLine : "Untitled";
     LogData();
     setNotes((prev) => [newNote, ...prev]);
@@ -57,7 +57,7 @@ function App() {
 
   const updateNote = (text) => {
     setNotes((oldNotes) => {
-      oldNotes.summary = text !== "" ? text : `${text}`;
+      oldNotes.summary = text !== "" ? `${text}` : `Title`
       const updatedNote = oldNotes.find((note) => note.id === currentNoteId);
       const otherNotes = oldNotes.filter((note) => note.id !== currentNoteId);
       return updateNote
