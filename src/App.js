@@ -5,18 +5,9 @@ import Split from "react-split";
 import "react-mde/lib/styles/css/react-mde-all.css";
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
-// import {data} from "./assets/data/noteData"
 
 function App() {
-  /*
-  /* Challenge: 4 Features.
-  /* 1. Sync notes with localStorage (save them into localStorage and read them from.)✅
-  /* 2. Add note summary titles ✅
-  /* 3. Move modified notes to the top of the list ✅
-  /* 4. Delete note by id ✅
-  */
-
-  const [notes, setNotes] = useState( JSON.parse(localStorage.getItem('notes')) || []);
+  const [notes, setNotes] = useState(JSON.parse(localStorage.getItem('notes')) || []);
 
   useEffect(() => {
     localStorage.setItem("notes", JSON.stringify(notes));
@@ -61,7 +52,7 @@ function App() {
       const updatedNote = oldNotes.find((note) => note.id === currentNoteId);
       const otherNotes = oldNotes.filter((note) => note.id !== currentNoteId);
       return updateNote
-        ? [{ ...updatedNote, body: text, summary: oldNotes.summary.split("\n")[0].replace(/^#+\s*/, ""), modifiedAt: new Date()  }, ...otherNotes]
+        ? [{ ...updatedNote, body: text, summary: oldNotes.summary.split("\n")[0].replace(/^#+\s*/, ""), modifiedAt: new Date() }, ...otherNotes]
         : oldNotes;
     })
   };

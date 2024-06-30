@@ -2,15 +2,18 @@
   width: 20%;
   height: 100vh;
 }
+
 .sidebar--header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 18px;
 }
+
 .sidebar--header--title {
   font-size: 1.75rem;
 }
+
 .delete-note {
   background-color: #4a4e74;
   color: white;
@@ -19,6 +22,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 .sidebar--header--btn {
   cursor: pointer;
   background-color: #4a4e74;
@@ -29,6 +33,7 @@
   color: #fff;
   margin: 0 6px;
 }
+
 .sidebar .note {
   overflow: hidden;
   width: 100%;
@@ -38,6 +43,7 @@
   padding: 0 6px;
   margin-bottom: 4px;
 }
+
 .sidebar .note--text {
   padding-inline: 6px;
   font-size: 0.8rem;
@@ -58,7 +64,7 @@
   background-color: white;
   color: #4a4e74;
 }
+
 .selected-note .note--text {
   color: #fff;
 }
-/*# sourceMappingURL=Sidebar.css.map */

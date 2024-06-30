@@ -1,1 +1,10 @@
-{"version":3,"sources":["Editor.scss","Editor.css"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,aAAA;ACCJ","file":"Editor.css"}
+{
+    "version": 3,
+    "sources": [
+        "Editor.scss",
+        "Editor.css"
+    ],
+    "names": [],
+    "mappings": "AAAA;EACI,UAAA;EACA,aAAA;ACCJ",
+    "file": "Editor.css"
+}

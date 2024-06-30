@@ -1,1 +1,9 @@
-{"version":3,"sources":["Editor.scss"],"names":[],"mappings":"AAAA,QACI,SAAA,CACA,YAAA","file":"Editor.min.css"}
+{
+    "version": 3,
+    "sources": [
+        "Editor.scss"
+    ],
+    "names": [],
+    "mappings": "AAAA,QACI,SAAA,CACA,YAAA",
+    "file": "Editor.min.css"
+}

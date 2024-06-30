@@ -5,9 +5,8 @@ const Sidebar = (props) => {
   const noteElements = props.notes.map((note, index) => (
     <div key={index}>
       <div
-        className={`note ${
-          note.id === props.currentNote.id ? "selected-note" : ""
-        }`}
+        className={`note ${note.id === props.currentNote.id ? "selected-note" : ""
+          }`}
         onClick={() => props.setCurrentNoteId(note.id)}
       >
         <h4 className="note--text">{note.summary}</h4>

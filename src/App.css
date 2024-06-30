@@ -1,31 +1,25 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-.pane{
+.pane {
   overflow-y: auto;
-  /* display: inline-block; */
 }
 
-/* split */
-
-.split{
+.split {
   display: flex;
 }
 
-.gutter{
-  /* border: 1px solid black; */
+.gutter {
   background-color: #eee;
 }
 
-/* no notes section */
-
-.empty-notes{
+.empty-notes {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -35,7 +29,7 @@ body{
   background-color: whitesmoke;
 }
 
-.empty-notes button{
+.empty-notes button {
   cursor: pointer;
   background-color: #4A4E74;
   border: none;
