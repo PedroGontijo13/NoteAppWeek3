@@ -1,5 +1,6 @@
 import ReactMDE from "react-mde";
 import * as Showdown from "showdown";
+import React from "react";
 import { useState } from "react"
 import "./Editor.css"
 

@@ -1,5 +1,6 @@
 import "./App.css";
 import Editor from "./components/Editor/Editor";
+import React from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Split from "react-split";
 import "react-mde/lib/styles/css/react-mde-all.css";
